@@ -4,6 +4,7 @@
 - LinkedIn: [Adam Minasyan](https://www.linkedin.com/in/adam-minasyan-a18384252)
 - GitHub: [github.com/adam7717](https://github.com/adam7717)
 - Email: adamminasyan@gmail.com
+- Phone: +37498883834
 
 ## Summary
 As a passionate Junior Developer, I am eager to grow my skills and contribute to exciting projects. My main goal is to work in a team-oriented environment where I can learn from experienced developers and constantly improve. I am dedicated, self-motivated, and thrive in fast-paced learning environments.
