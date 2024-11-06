@@ -10,7 +10,7 @@
 As a passionate Junior Developer, I am eager to grow my skills and contribute to exciting projects. My main goal is to work in a team-oriented environment where I can learn from experienced developers and constantly improve. I am dedicated, self-motivated, and thrive in fast-paced learning environments.
 
 ## Skills
-- **Programming Languages:** JavaScript
+- **Programming Languages:** JavaScript, Python
 - **Frameworks & Libraries:** React
 - **Tools & Technologies:** Git, GitHub
 
