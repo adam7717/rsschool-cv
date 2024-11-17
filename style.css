@@ -1,69 +1,238 @@
-/* General Reset */
-body {
+/* Reset default styles */
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
+  box-sizing: border-box;
 }
 
-/* Header */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Container for center alignment */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 header {
   text-align: center;
-  background: #0077b6;
+  background-color: #333;
   color: white;
-  padding: 1.5rem;
+  padding: 40px 0;
+  animation: fadeIn 1s ease-out; /* Header fade-in animation */
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2.5rem;
+  font-size: 3em;
+  margin-bottom: 10px;
+  animation: slideInFromLeft 1s ease-out; /* Slide-in animation for title */
 }
 
 header p {
-  font-size: 1.2rem;
-  margin: 0.5rem 0 0;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  animation: slideInFromLeft 1.5s ease-out; /* Slide-in animation for subtitle */
 }
 
-/* Sections */
-section {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1rem 1.5rem;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+header .avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+  object-fit: cover;
+  animation: bounceIn 2s ease; /* Avatar bounce-in animation */
 }
 
-section h2 {
-  color: #0077b6;
-  margin-top: 0;
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+  margin-bottom: 40px;
+  padding: 10px;
+  animation: fadeInUp 1.5s ease-out; /* Fade-in and slide-up effect for navigation */
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #ffcc00; /* Highlight color on hover */
+}
+
+main {
+  background-color: white;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+  animation: fadeInUp 1s ease-out; /* Fade-in animation for main content */
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 ul {
   list-style: none;
-  padding: 0;
 }
 
 ul li {
-  margin: 0.5rem 0;
+  margin-bottom: 10px;
 }
 
-/* Links */
-a {
-  color: #0077b6;
+ul li a {
+  color: #0073e6;
   text-decoration: none;
 }
 
-a:hover {
+ul li a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #333;
-  color: white;
-  margin-top: 2rem;
+/* Progress Bar Styling */
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  height: 10px;
+  margin: 5px 0;
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1); /* Inner shadow effect */
 }
+
+.progress {
+  height: 10px;
+  background-color: #333;
+  border-radius: 10px;
+  width: 0;
+  transition: width 1s ease-in-out, background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect on progress */
+}
+
+.progress-bar .progress {
+  width: 100%;
+  background-color: #333;
+  animation: progressAnimation 2s ease-in-out forwards; /* Animation for progress bars */
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Footer shadow */
+  animation: fadeInUp 2s ease-out; /* Footer fade-in animation */
+}
+
+footer a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .rs-logo {
+  width: 50px;
+  margin-top: 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  header p {
+    font-size: 1.2em;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInFromLeft {
+  0% { opacity: 0; transform: translateX(-30px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes progressAnimation {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+/* Modern UI Styles */
+h2 {
+  color: #444;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 5px;
+}
+
+ul li {
+  font-size: 1.1em;
+}
+
+ul li a {
+  font-weight: bold;
+}
+
+ul li a:hover {
+  color: #005bb5;
+}
+
