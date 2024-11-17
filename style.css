@@ -236,4 +236,41 @@ ul li a:hover {
   color: #005bb5;
 }
 
+/* Style for the React Code Example section */
+#react-code {
+  background-color: #f7f7f7;  /* Light background for the section */
+  padding: 20px;              /* Add padding around the section */
+  border-radius: 8px;         /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin-bottom: 30px;        /* Space between sections */
+}
+
+/* Style for the code block */
+#react-code pre {
+  background-color: #2d2d2d;  /* Dark background for the code */
+  color: #f8f8f2;             /* Light text color for code */
+  padding: 20px;              /* Padding inside the code block */
+  border-radius: 8px;         /* Rounded corners */
+  font-size: 1em;             /* Adjust font size */
+  line-height: 1.6;           /* Spacing between lines */
+  overflow-x: auto;           /* Allow horizontal scrolling if code is long */
+  overflow-y: auto;           /* Allow vertical scrolling if code is long */
+  max-height: 400px;          /* Set a max height for the code block */
+  white-space: pre-wrap;      /* Wrap lines of code */
+  word-wrap: break-word;      /* Break long words if needed */
+}
+
+/* Add syntax highlighting (Optional) */
+#react-code code {
+  font-family: 'Courier New', Courier, monospace;  /* Monospaced font for code */
+  font-size: 1.1em;               /* Slightly larger font size for better readability */
+  display: block;                 /* Block display for the code */
+  overflow-wrap: break-word;      /* Wrap the text inside the code */
+}
+
+/* Optional: Add line numbers or styling for specific lines */
+#react-code pre code {
+  display: block;
+  padding-left: 10px;
+}
 
