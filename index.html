@@ -80,27 +80,18 @@
   <section id="react-code" class="section">
     <h2>React Code Example</h2>
     <pre><code>
-import './App.css';
-import LessText from './LessText/LessText';
-
-function App({ friends }) {
-  return (
-    <div className="App">
-      {
-        friends.map((friend) => {
-          return (
-            <div key={friend.id}>
-              <h3>{friend.firstName} {friend.lastName}</h3>
-              <p>Age: {friend.age}</p>
-            </div>
-          )
-        })
-      }
-    </div>
-  );
+          function fact(n) { 
+    let res = 1; 
+    
+    if(n === 0)
+        return 1;
+    for (let i = 2; i <= n; i++) 
+        res = res * i; 
+    return res; 
 }
 
-export default App;
+let n = 5; 
+console.log(fact(n));
     </code></pre>
   </section>
 
